@@ -1,5 +1,16 @@
 class AnimalsController < ApplicationController
 
+  # def index
+  #   if params[:page]
+  #     @animals = Animal.page(params[:page]).per(params[:per_page])
+  #     pageCount = (Animal.count / params[:per_page].to_f).ceil      
+  #   else
+  #     @animals = Animal.order('updated_at DESC')
+  #     pageCount = 1
+  #   end
+  #   render json: { animals: @animals, meta: { total: pageCount, records: Animal.count } }
+  # end
+
   def index
     @animals = Animal.all
     json_response(@animals)
