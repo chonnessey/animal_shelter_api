@@ -24,7 +24,8 @@
 ---
 ### Endpoints :stop_sign:
 * The index to this database is `localhost:3000/animals`. This will bring up the first 25 animals from the shelter.
-* I've added pagination via the _**faker gem&&_ to this database so each page will have have 25 animals on it. To query this you'll use the `localhost:3000/animals?page=*PAGE NUMBER*`.
+* I've added pagination via the _**faker gem**_ to this database so each page will have have 25 animals on it. To query this you'll use the `localhost:3000/animals?page=*PAGE NUMBER*`.
+* `localhost:3000/animals?page=1` is the same as the index so start at `2` to view more animals.
 * Remember, there is 25 animals per page so keep that in mind when querying this endpoint.
 * You can view dogs only with `localhost:3000/animals/dogs`.
 * Same thing with cats `localhost:3000/animals/cats`.
