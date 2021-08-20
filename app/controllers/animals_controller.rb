@@ -1,5 +1,4 @@
 class AnimalsController < ApplicationController
-
   # def page
   #   if params[:page]
   #     @animals = Animal.page(params[:page]).per(params[:per_page])
@@ -12,7 +11,7 @@ class AnimalsController < ApplicationController
   # end
 
   def index
-    @animals = Animal.limit(15).page(params[:page])
+    @animals = Animal.all
     json_response(@animals)
   end
 
@@ -54,7 +53,12 @@ class AnimalsController < ApplicationController
     json_response(@animals, 200)
   end
 
-  def puppies
+  def cheap_fee
+    @animals = Animal.cheap_fee
+    json_response(@animals, 200)
+  end
+
+  def puppies 
     @animals = Animal.puppies
     json_response(@animals, 200)
   end
