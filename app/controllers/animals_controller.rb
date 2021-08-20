@@ -33,6 +33,16 @@ class AnimalsController < ApplicationController
     end
   end
 
+  def dogs
+    @animals = Animal.dogs
+    json_response(@animals, 200)
+  end
+
+  def cats
+    @animals = Animal.cats
+    json_response(@animals, 200)
+  end
+
   private
 
   def animal_params
