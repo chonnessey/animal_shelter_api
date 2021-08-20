@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_20_161945) do
+ActiveRecord::Schema.define(version: 2021_08_20_165305) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "animals", force: :cascade do |t|
-    t.string "type"
+    t.string "animal_type"
     t.string "breed"
     t.string "age"
     t.string "sex"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2021_08_20_161945) do
     t.integer "weight"
     t.string "date"
     t.float "adoption_fee"
+    t.string "name"
   end
 
 end
