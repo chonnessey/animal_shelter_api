@@ -3,6 +3,6 @@ class Animal < ApplicationRecord
     validates field, presence: true
   end
 
-  scope :dogs, -> { where(animal_type: 'Dog')}
-  scope :cats, -> { where(animal_type: 'Cat')}
+  scope :dogs, -> { where(animal_type: 'Dog') }
+  scope :cats, -> { where(animal_type: 'Cat') }
 end
