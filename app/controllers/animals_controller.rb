@@ -11,7 +11,7 @@ class AnimalsController < ApplicationController
   # end
 
   def index
-    @animals = Animal.all
+    @animals = Animal.order(:name).page params[:page]
     json_response(@animals)
   end
 
