@@ -1,6 +1,6 @@
 class AnimalsController < ApplicationController
 
-  # def index
+  # def page
   #   if params[:page]
   #     @animals = Animal.page(params[:page]).per(params[:per_page])
   #     pageCount = (Animal.count / params[:per_page].to_f).ceil      
@@ -12,7 +12,7 @@ class AnimalsController < ApplicationController
   # end
 
   def index
-    @animals = Animal.all
+    @animals = Animal.limit(15).page(params[:page])
     json_response(@animals)
   end
 
