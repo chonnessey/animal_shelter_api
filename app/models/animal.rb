@@ -6,5 +6,4 @@ class Animal < ApplicationRecord
   scope :dogs, -> { where(animal_type: 'Dog') }
   scope :cats, -> { where(animal_type: 'Cat') }
   scope :cheap_fee, -> { where("adoption_fee < 50" ) }
-  scope :puppies, -> { where("age < ?", 2) }
 end

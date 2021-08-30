@@ -18,9 +18,10 @@
 2. Enter new directory `cd directory`
 3. Install dependencies with the `bundle` command.
 4. To run a serverside database use the command `rake db:create`.
+5. Run `rake db:migrate` after you create the database.
 6. Run `rake db:seed` to populate the database.
-5. To run the Rails local server run the command `rails s` and then navigate to `localhost:3000`.
-6. Checkout the _**Endpoints**_ section to see all the ways you can query this database!
+7. To run the Rails local server run the command `rails s` and then navigate to `localhost:3000`.
+8. Checkout the _**Endpoints**_ section to see all the ways you can query this database!
 ---
 ### Endpoints :stop_sign:
 * The index to this database is `localhost:3000/animals`. This will bring up the first 25 animals from the shelter.
