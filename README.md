@@ -15,8 +15,8 @@
 5. _Postman_
 ---
 ### Installation Instructions :pushpin:
-1. Clone this repo: `https://github.com/chonnessey/repo.git`
-2. Enter new directory `cd directory`
+1. Clone this repo: `https://github.com/chonnessey/animal_shelter_api.git`
+2. Enter new directory `cd animal_shelter_api`
 3. Install dependencies with the `bundle` command.
 4. To run a serverside database use the command `rake db:create`.
 5. Run `rake db:migrate` after you create the database.
